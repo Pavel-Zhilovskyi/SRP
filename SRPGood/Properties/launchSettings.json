@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SRPGood": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

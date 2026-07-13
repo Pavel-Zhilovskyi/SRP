@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u7KOXCd3i1U=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pasha\\OneDrive\\Desktop\\C#\\SOLID\\SRP\\SRPGood\\SRPGood.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pasha\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512"
+  ],
+  "logs": []
+}
