@@ -24,19 +24,19 @@ internal class ShopService
 
     public void ProcessPurchase()
     {
-        if (_cart.ValidateHasEnoughStock())
+        if (Validator.ValidatePositiveProductCountOrder(_cart.ProductToBuyQuantity))
         {
-            Console.WriteLine("There`re " + _storage.ProductQuantity + " of product left");
-            Console.WriteLine("Price: " + _storage.Price);
+            if (_cart.ValidateHasEnoughStock()) 
+            { 
+                Console.WriteLine("There`re " + _storage.ProductQuantity + " of product left");
+                Console.WriteLine("Price: " + _storage.Price);
 
-            if (Validator.ValidatePositiveProductCountOrder(_cart.ProductToBuyQuantity))
-            {
                 Console.WriteLine($"Products in cart: {_cart.ProductToBuyQuantity}");
 
                 int total = _calculator.CountPriceWithSale(_calculator.CountPrice(_cart.ProductToBuyQuantity));
                 Console.WriteLine("Total price of order: " + total);
 
-                _cart.Buy();
+                _storage.DecreaseProductQuantity(_cart.ProductToBuyQuantity);
 
                 _notifier.SendEmailNotification($"U have successfully bought {_cart.ProductToBuyQuantity} c.u. of product" +
                     $" for {total}$");

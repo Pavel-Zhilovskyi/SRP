@@ -21,9 +21,4 @@ internal class Cart
         Console.WriteLine("Not enough product left");
         return false;
     }
-
-    public void Buy()
-    {
-        storage.DecreaseProductQuantity(ProductToBuyQuantity);
-    }
 }

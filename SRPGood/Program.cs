@@ -25,3 +25,11 @@ internal class Program
         service3.ProcessPurchase();
     }
 }
+
+
+//now each class has only one responsibility
+//now if I want to change any detail of my programm
+//I just open needed file and here is my class/method that I want to change
+//
+//before refactoring my class had 6 reasons to change
+//now each class has only 1

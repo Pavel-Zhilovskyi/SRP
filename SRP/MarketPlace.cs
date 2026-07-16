@@ -67,3 +67,5 @@ internal class MarketPlace
 
 //if we start selling our products not one by one but a few at a time,
 //we will have to change supply method(constructor) too
+//each time adding new functionality I need to open one big file 
+//where things lie mixed together, unconnected by any logic
