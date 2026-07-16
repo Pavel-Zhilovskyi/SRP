@@ -1,6 +1,6 @@
 ﻿namespace SRPGood;
 
-internal class PriceCalculator
+internal class PriceCalculator : ICalculator
 {
     private Storage storage;
 

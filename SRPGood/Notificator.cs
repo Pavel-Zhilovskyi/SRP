@@ -1,16 +1,9 @@
 ﻿namespace SRPGood;
 
-internal class Notificator
+internal class Notificator : INotifier
 {
-    private string _message;
-
-    public Notificator(string text)
+    public void SendEmailNotification(string message)
     {
-        _message = text;
-    }
-
-    public void SendEmailNotification()
-    {
-        Console.WriteLine($"Email: {_message}");
+        Console.WriteLine($"Email: {message}");
     }
 }

@@ -2,7 +2,7 @@
 
 internal static class Validator
 {
-    public static bool ValidateOrder(int quantityToBuy)
+    public static bool ValidatePositiveProductCountOrder(int quantityToBuy)
     {
         if(quantityToBuy > 0)
         {

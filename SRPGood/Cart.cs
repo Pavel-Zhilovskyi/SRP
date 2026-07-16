@@ -12,16 +12,15 @@ internal class Cart
         ProductToBuyQuantity = productToBuyQuantity;
     }
 
-    public bool ValidateOrder()
+    public bool ValidateHasEnoughStock()
     {
         if (storage.ProductQuantity >= ProductToBuyQuantity)
         {
             return true;
         }
+        Console.WriteLine("Not enough product left");
         return false;
     }
-
-
 
     public void Buy()
     {
